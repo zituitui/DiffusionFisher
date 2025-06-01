@@ -28,6 +28,6 @@ F_t({x}_t, t) = \frac{1}{\sigma_t^2} {I} - \frac{\alpha_t^2}{\sigma_t^4} \left[
     - \left( \int w({y}) {y} \, \mathrm{d}q_0 \right) \left( \int w({y}) {y} \, \mathrm{d}q_0 \right)^\top
 \right]
 ```
-where we define $v(x_t, t, y)$ as $\exp(-\frac{|x_t - \alpha_t y|^2}{2\sigma_t^2})\in \mathbb{R}$ and $w(x_t, t, y)$ as $\frac{v(x_t, t, y)}{\int_{\mathbb{R}^d}  v(x_t, t, y)\rd q_0(y)} \in \mathbb{R}$
+where we define $v(x_t, t, y)$ as $\exp(-\frac{|x_t - \alpha_t y|^2}{2\sigma_t^2})\in \mathbb{R}$ and $w(x_t, t, y)$ as $\frac{v(x_t, t, y)}{\int_{\mathbb{R}^d}  v(x_t, t, y)\textnormal{d} q_0(y)} \in \mathbb{R}$
 
 
