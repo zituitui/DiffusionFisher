@@ -16,10 +16,17 @@ _"Efficiently Access Diffusion Fisher: Within the Outer Product Span Space"_
 
 ## 🆕 What's New?
 ### The analytical formulation of [Fisher information](https://en.wikipedia.org/wiki/Fisher_information) in diffusion models.
-Let us define:
 
+Let us define the Fisher information of diffused distributions as follows:
 ```math
 F_t(x_t, t) := - \frac{\partial^2}{\partial x_t^2} \log q_t(x_t, t)
+```
+We have :
+```math
+F_t(\bm{x}_t, t) = \frac{1}{\sigma_t^2} \bm{I} - \frac{\alpha_t^2}{\sigma_t^4} \left[ 
+    \int w(\bm{y}) \bm{y} \bm{y}^\top \, \mathrm{d}q_0
+    - \left( \int w(\bm{y}) \bm{y} \, \mathrm{d}q_0 \right) \left( \int w(\bm{y}) \bm{y} \, \mathrm{d}q_0 \right)^\top
+\right]
 ```
 
 
