@@ -23,9 +23,9 @@ F_t(x_t, t) := - \frac{\partial^2}{\partial x_t^2} \log q_t(x_t, t)
 ```
 We have :
 ```math
-F_t(\bm{x}_t, t) = \frac{1}{\sigma_t^2} \bm{I} - \frac{\alpha_t^2}{\sigma_t^4} \left[ 
-    \int w(\bm{y}) \bm{y} \bm{y}^\top \, \mathrm{d}q_0
-    - \left( \int w(\bm{y}) \bm{y} \, \mathrm{d}q_0 \right) \left( \int w(\bm{y}) \bm{y} \, \mathrm{d}q_0 \right)^\top
+F_t({x}_t, t) = \frac{1}{\sigma_t^2} {I} - \frac{\alpha_t^2}{\sigma_t^4} \left[ 
+    \int w({y}) {y} {y}^\top \, \mathrm{d}q_0
+    - \left( \int w({y}) {y} \, \mathrm{d}q_0 \right) \left( \int w({y}) {y} \, \mathrm{d}q_0 \right)^\top
 \right]
 ```
 
