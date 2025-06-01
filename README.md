@@ -12,4 +12,15 @@ _"Efficiently Access Diffusion Fisher: Within the Outer Product Span Space"_
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2505.23264-b31b1b.svg)](https://www.arxiv.org/abs/2505.23264)&nbsp;
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;
 
+</div>
+
+## 🆕 What's New?
+### The analytical formulation of [Fisher information](https://en.wikipedia.org/wiki/Fisher_information) in diffusion models.
+Let us define:
+
+```math
+F_t(x_t, t) := - \frac{\partial^2}{\partial x_t^2} \log q_t(x_t, t)
+```
+
+
 
