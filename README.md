@@ -40,12 +40,16 @@ where we define $v(x_t, t, y)$ as $\exp(-\frac{|x_t - \alpha_t y|^2}{2\sigma_t^2
 
 ### DF Trace Matching
 We propose the DF-TM algorithm to learn the trace of diffusion Fisher and thus enabling efficient NLL evaluation.
+#### Code: [Coming Soon]
+
 
 ### DF Endpoint Approximation
 We propose the DF-EA algorithm to enable more accurate and efficient adjoint optimization.
+#### Code: [Coming Soon]
 
 ### DF Optimal Transport
 We design the first numerical verification experiment for the optimal transport property of the general PF-ODE deduced map.
+#### Code: [Coming Soon]
 
 
 ## 🪪 License
