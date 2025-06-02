@@ -1,4 +1,4 @@
-# DiffusionFisher
+# Fisher Information in the Diffusion Models
 
 <div align="center">
 
@@ -12,7 +12,7 @@ _"Efficiently Access Diffusion Fisher: Within the Outer Product Span Space"_
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2505.23264-b31b1b.svg)](https://www.arxiv.org/abs/2505.23264)&nbsp;
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;
 
-<img src="assets/figure_icml_adjoint.jpg" alt="Adjoint Improvement Results" style="width: 80%;">
+<img src="assets/figure_icml_adjoint.jpg" alt="Adjoint Improvement Results" style="width: 85%;">
 
 <img src="assets/nll_drawio.png" alt="Adjoint Improvement Results" style="width: 80%;">
 
@@ -22,7 +22,8 @@ _"Efficiently Access Diffusion Fisher: Within the Outer Product Span Space"_
 
 
 ## 🆕 What's New?
-### We derived the analytical formulation of [Fisher information](https://en.wikipedia.org/wiki/Fisher_information) in diffusion models.
+### Analytical diffusion Fisher (DF)
+We first derived the analytical formulation of [Fisher information](https://en.wikipedia.org/wiki/Fisher_information) in diffusion models.
 
 Let us define the Fisher information of diffused distributions as follows:
 ```math
@@ -37,7 +38,14 @@ F_t({x}_t, t) = \frac{1}{\sigma_t^2} {I} - \frac{\alpha_t^2}{\sigma_t^4} \left[
 ```
 where we define $v(x_t, t, y)$ as $\exp(-\frac{|x_t - \alpha_t y|^2}{2\sigma_t^2})\in \mathbb{R}$ and $w(x_t, t, y)$ as $\frac{v(x_t, t, y)}{\int_{\mathbb{R}^d}  v(x_t, t, y)\textnormal{d} q_0(y)} \in \mathbb{R}$
 
+### DF Trace Matching
+We propose the DF-TM algorithm to learn the trace of diffusion Fisher and thus enabling efficient NLL evaluation.
 
+### DF Endpoint Approximation
+We propose the DF-EA algorithm to enable more accurate and efficient adjoint optimization.
+
+### DF Optimal Transport
+We design the first numerical verification experiment for the optimal transport property of the general PF-ODE deduced map.
 
 
 ## 🪪 License
